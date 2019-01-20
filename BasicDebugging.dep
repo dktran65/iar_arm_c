@@ -5,55 +5,70 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Fibonacci.c</file>
-            <file>$PROJ_DIR$\Utilities.c</file>
             <file>$PROJ_DIR$\Debug\Obj\Fibonacci.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\Utilities.o</file>
-            <file>$PROJ_DIR$\Debug\Exe\BasicDebugging.out</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
             <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Utilities.o</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\Fibonacci.h</file>
-            <file>$PROJ_DIR$\Utilities.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\config\generic.icf</file>
+            <file>$PROJ_DIR$\Debug\Exe\BasicDebugging.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
             <file>$TOOLKIT_DIR$\lib\shs_l.a</file>
+            <file>$PROJ_DIR$\Fibonacci.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl4t_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\Utilities.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\List\BasicDebugging.map</file>
             <file>$TOOLKIT_DIR$\lib\rt4t_al.a</file>
             <file>$TOOLKIT_DIR$\lib\m4t_al.a</file>
-            <file>$TOOLKIT_DIR$\lib\dl4t_tln.a</file>
-            <file>$PROJ_DIR$\Debug\List\BasicDebugging.map</file>
-            <file>$PROJ_DIR$\Debug\Obj\Fibonacci.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\config\generic.icf</file>
             <file>$PROJ_DIR$\Debug\Obj\Utilities.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\Fibonacci.__cstat.et</file>
+            <file>$PROJ_DIR$\Fibonacci.c</file>
+            <file>$PROJ_DIR$\Utilities.c</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 4 20</file>
+                    <file> 5 15</file>
                 </tool>
             </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\BasicDebugging.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 18 0 3 8 16 17 11</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\Fibonacci.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 2</file>
+                    <file> 0</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 21</file>
+                    <file> 20</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 5 6 7 8 9 10 11 12</file>
+                    <file> 6 1 2 7 4 10 9 13</file>
                 </tool>
             </inputs>
         </file>
@@ -66,28 +81,13 @@
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 22</file>
+                    <file> 19</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 5 6 7 8 9 10 13 14 12</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\BasicDebugging.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 20</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 15 2 3 16 17 18 19</file>
+                    <file> 6 1 2 7 4 10 12 14 13</file>
                 </tool>
             </inputs>
         </file>
